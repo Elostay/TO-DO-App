@@ -18,11 +18,26 @@
 		</ul>
 	</div> -->
 	<form id="task-form">
-		<input type="text" name="taskName" />
-		<button type="submit">Додати</button>
+
+		<!-- <header class="header-container container">
+			<button type="button" class="header-btn">TO DO LIST</button>
+			<ul class="status-tasks">
+				<li class="status-tasks-item"><button type="button" class="status-btn-text" data-status="all">All</button>
+				</li>
+				<li class="status-tasks-item"><button type="button" class="status-btn-text"
+						data-status="active">Active</button></li>
+				<li class="status-tasks-item"><button type="button" class="status-btn-text"
+						data-status="completed">Completed</button></li>
+			</ul>
+		</header class="header-container container"> -->
+		<main class="main container">
+			<div class="input-container">
+				<input class="input-task" type="text" name="taskName" placeholder="What needs to be done?" />
+				<button type="submit" class="btn-add">Додати</button>
+			</div>
+			<ul class="task-list" id="task-list"></ul>
+		</main>
 	</form>
-	<!-- <img src="./images/bin.png" alt=""> -->
-	<ul id="task-list"></ul>
 	<script type="module" src="./js/index.js"></script>
 </body>
 
